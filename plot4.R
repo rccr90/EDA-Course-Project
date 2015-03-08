@@ -27,7 +27,7 @@ with(data, plot(y = as.numeric(as.character(data$Voltage)), x = Times,
 
 ##3
 plot(y = as.numeric(as.character(data$Sub_metering_1)), x = data$Times, type = "l", col = "black",
-     yaxt="n", ylab = "Energy sub metering", ylim =c(-.1, 40))
+     yaxt="n", ylab = "Energy sub metering",xlab ="" ,ylim =c(-.1, 40))
 axis(2, at = c(0,10,20,30))
 lines(data$Times, as.numeric(as.character(data$Sub_metering_2)), col = "red", type = "l")
 lines(data$Times, as.numeric(as.character(data$Sub_metering_3)), col = "blue", type = "l")
@@ -54,7 +54,7 @@ with(data, plot(y = as.numeric(as.character(data$Voltage)), x = Times,
 
 ##3
 plot(y = as.numeric(as.character(data$Sub_metering_1)), x = data$Times, type = "l", col = "black",
-     yaxt="n", ylab = "Energy sub metering", ylim =c(-.1, 40))
+     yaxt="n",xlab = "", ylab = "Energy sub metering", ylim =c(-.1, 40))
 axis(2, at = c(0,10,20,30))
 lines(data$Times, as.numeric(as.character(data$Sub_metering_2)), col = "red", type = "l")
 lines(data$Times, as.numeric(as.character(data$Sub_metering_3)), col = "blue", type = "l")
